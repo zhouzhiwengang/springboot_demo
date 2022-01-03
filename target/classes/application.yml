@@ -41,3 +41,14 @@ spring:
 # 扫描mapper 文件夹
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+# cas server 和 client 设置
+cas:
+  server:
+    prefix:http://localhost:8443/cas
+    login:http://localhost:8443/cas/login
+    logout:http://localhost:8443/cas/logout
+  client:
+    prefix:http://localhost:8080/demo
+    login:http://localhost:8080/demo/login/cas
+    logoutRelative:/mylogout
+    logout:http://localhost:8080/demo/mylogout

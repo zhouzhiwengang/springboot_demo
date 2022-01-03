@@ -46,7 +46,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-		
+		<!--集成cas 客户端 -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-cas</artifactId>
+		</dependency>
 		<!-- MyBatis-Plus 拓展 -->
 		<dependency>
 			<groupId>com.baomidou</groupId>
@@ -125,6 +129,6 @@
 			<artifactId>hutool-all</artifactId>
 			<version>5.5.2</version>
 		</dependency>
-		
+
 	</dependencies>
 </project>
